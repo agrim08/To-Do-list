@@ -3,16 +3,22 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>To-Do List</title>
+    <title>Home</title>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <nav class="nav" id="navId">
       <div class="home"><a href="#" class="nav-element" id="home">HOME</a></div>
       <div class="homeless">
-        <a href="#" class="nav-element" id="contact">ABOUT-US</a>
-        <a href="#" class="nav-element" id="faq">FAQs</a>
-        <a href="#" class="nav-element" id="login">LOGIN</a>
+        <a href="#contact" class="nav-element" id="contact">ABOUT-US</a>
+        <a href="#faq" class="nav-element" id="faq">FAQs</a>
+        <a
+          href="http://127.0.0.1:5500/login-page/index.html"
+          target="_blank"
+          class="nav-element"
+          id="login"
+          >LOGIN</a
+        >
       </div>
     </nav>
     <div class="bottom-text">
@@ -26,7 +32,7 @@
         accusantium blanditiis quas.</i
       >
     </div>
-    <div class="contact-us">
+    <div class="contact-us" id="contact">
       <div class="contact-heading">ABOUT-US</div>
       <div class="contact-text">
         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic corporis,
@@ -43,7 +49,7 @@
       </div>
     </div>
 
-    <div class="contact-us">
+    <div class="contact-us" id="faq">
       <div class="contact-heading">FAQs</div>
 
       <div class="one">
@@ -69,16 +75,22 @@
             Please write and hit the <b>Submit button</b>
           </div>
           <div class="input">
-            <input type="text" />
+            <input type="text" placeholder="feedback" />
 
             <button class="submit"><b>Submit</b></button>
           </div>
         </div>
         <div class="social">
-          <img src="whatsapp.png" />
+          <a href="https://web.whatsapp.com/" target="_blank"
+            ><img src="whatsapp.png"
+          /></a>
           <img src="facebook.png" />
-          <img src="instagram.png" />
-          <img src="mail.png" />
+          <a href="https://www.instagram.com/" target="_blank"
+            ><img src="instagram.png"
+          /></a>
+          <a href="https://mail.google.com/mail/u/0/#inbox" target="_blank"
+            ><img src="mail.png"
+          /></a>
         </div>
       </div>
     </footer>

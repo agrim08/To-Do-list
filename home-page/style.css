@@ -13,6 +13,7 @@ body {
   /* width: 100vw; */
   height: 100vh;
   line-height: 20px;
+  color: white;
 }
 
 .nav {
@@ -27,14 +28,14 @@ body {
   font-weight: 600;
   font-size: 16px;
   text-decoration: none;
-  color: #000;
+  color: #ffffff;
   display: inline-block;
   padding-top: 20px;
   transition: all 0.3s ease 0s;
 }
 
 .nav a:hover {
-  color: darkblue;
+  color: antiquewhite;
   opacity: 0.7;
 }
 
@@ -55,12 +56,13 @@ body {
   margin-bottom: 20px;
   font-weight: bold;
   padding: 34% 0 10px 10px;
+  color: white;
 }
 
 .contact-us {
   display: flex;
   font-size: 16px;
-  background-color: #e0b0ff;
+  background-color: #36454f;
   align-items: center;
   padding: 6% 20px 20px 20px;
 }
@@ -105,11 +107,12 @@ body {
   text-align: justify;
   padding: 10px 10px 10px 10px;
   background-color: cornsilk;
+  color: black;
 }
 
 footer {
   height: 100px;
-  background-color: #e0b0ff;
+  background-color: #36454f;
   color: black;
   padding-top: 40px;
 }
