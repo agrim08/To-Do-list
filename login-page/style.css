@@ -1,16 +1,15 @@
-@import url("https://fonts.googleapis.com/css2?family=Truculenta:opsz,wght@12..72,100..900&display=swap");
-
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Elsie Swash Caps", serif;
 }
 body {
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100vh;
-  background-image: url("3525926.jpg");
+  background-image: url("1291249.png");
 }
 .wrapper {
   background: transparent;
@@ -21,7 +20,7 @@ body {
 .wrapper h1 {
   font-size: 48px;
   text-align: center;
-  color: black;
+  color: white;
   font-weight: bold;
   padding-bottom: 10px;
 }

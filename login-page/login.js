@@ -10,29 +10,38 @@ function onPasswordChange(e) {
   userObj["password"] = e;
 }
 const login = () => {
+  console.log("Hii");
   const obj = JSON.parse(localStorage.getItem("user"));
 
   if (!userObj.name && !userObj.email && !userObj.password) {
-    alert("please fill the required details");
+    alert("Please fill the required details");
     return;
   } else {
     if (obj) {
       if (obj.email === userObj.email) {
         if (obj.password === userObj.password && obj.name === userObj.name) {
           //redirect to todo
+
           window.location.href = "../list/index.html";
+          return;
         } else {
           alert("wrong password or username");
+          return;
         }
       } else {
+        console.log("Here");
         localStorage.setItem("user", JSON.stringify(userObj));
         //redirect
+
         window.location.href = "../list/index.html";
+        return;
       }
     } else {
       localStorage.setItem("user", JSON.stringify(userObj));
       //redirect
+
       window.location.href = "../list/index.html";
+      return;
     }
   }
 };

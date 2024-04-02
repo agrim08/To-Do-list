@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Elsie Swash Caps", serif;
 }
 body {
   display: flex;
@@ -45,6 +46,16 @@ body {
   justify-content: space-between;
   width: 100%;
 }
+.new-task2 {
+  display: flex;
+  background: transparent;
+  text-align: justify;
+  font-size: 20px;
+  box-shadow: 1px black;
+  padding-bottom: 20px;
+  justify-content: space-between;
+  width: 100%;
+}
 button {
   display: flex;
   border: none;
@@ -67,4 +78,37 @@ button {
 
 .new-task-text {
   width: 80%;
+  text-decoration: solid;
+  color: #000080;
+  font-weight: 500;
+  font-size: 25px;
+}
+.new-task-text2 {
+  width: 80%;
+  text-decoration: solid;
+  /* color: darkorchid; */
+  font-size: 30px;
+  margin-bottom: 12px;
+}
+.new-task {
+  position: relative;
+}
+.addNew {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.inputText {
+  position: relative;
+  width: 100%;
+  height: 50px;
+  margin: 20px 0;
+  /* width: 100%; */
+  /* height: 100%; */
+  background: transparent;
+  border: none;
+  outline: none;
+  border: 2px solid purple;
+  border-radius: 30px;
+  padding: 20px 45px 20px 20px;
 }

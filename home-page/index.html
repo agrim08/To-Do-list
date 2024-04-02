@@ -4,6 +4,12 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Home</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Elsie+Swash+Caps:wght@400;900&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
@@ -14,23 +20,22 @@
         <a href="#faq" class="nav-element" id="faq">FAQs</a>
         <a
           href="http://127.0.0.1:5500/login-page/index.html"
-          target="_blank"
+          target=""
           class="nav-element"
           id="login"
           >LOGIN</a
         >
       </div>
     </nav>
+    <h1 class="main-heading">TO-DO LIST</h1>
     <div class="bottom-text">
-      <i
-        >Lorem ipsum dolor sit amet consectetur, adipisicing elit. Debitis natus
-        dolorum veritatis iure est facere delectus necessitatibus accusantium
-        commodi sapiente perferendis iste, alias odit fugiat eum fuga illo quae
-        sunt. Alias nobis laboriosam asperiores officiis consequatur quae in
-        similique magni, perspiciatis ipsum possimus, aperiam est laudantium
-        laborum fugit harum sint! Quasi atque dignissimos nemo labore eius neque
-        accusantium blanditiis quas.</i
-      >
+      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Debitis natus
+      dolorum veritatis iure est facere delectus necessitatibus accusantium
+      commodi sapiente perferendis iste, alias odit fugiat eum fuga illo quae
+      sunt. Alias nobis laboriosam asperiores officiis consequatur quae in
+      similique magni, perspiciatis ipsum possimus, aperiam est laudantium
+      laborum fugit harum sint! Quasi atque dignissimos nemo labore eius neque
+      accusantium blanditiis quas.
     </div>
     <div class="contact-us" id="contact">
       <div class="contact-heading">ABOUT-US</div>
@@ -75,7 +80,12 @@
             Please write and hit the <b>Submit button</b>
           </div>
           <div class="input">
-            <input type="text" placeholder="feedback" />
+            <input
+              onclick="addsNewTodo()"
+              class="feedbacks"
+              type="text"
+              placeholder="feedback"
+            />
 
             <button class="submit"><b>Submit</b></button>
           </div>
@@ -85,14 +95,15 @@
             ><img src="whatsapp.png"
           /></a>
           <img src="facebook.png" />
-          <a href="https://www.instagram.com/" target="_blank"
+          <a href="https://www.instagram.com/_agrim_0008/" target="_blank"
             ><img src="instagram.png"
           /></a>
-          <a href="https://mail.google.com/mail/u/0/#inbox" target="_blank"
+          <a href="mailto:agrimgupta0805@gmail.com" target="_blank"
             ><img src="mail.png"
           /></a>
         </div>
       </div>
     </footer>
   </body>
+  <script src="script.js"></script>
 </html>
