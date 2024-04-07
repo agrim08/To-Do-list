@@ -28,7 +28,6 @@ const login = () => {
           return;
         }
       } else {
-        console.log("Here");
         localStorage.setItem("user", JSON.stringify(userObj));
         //redirect
 

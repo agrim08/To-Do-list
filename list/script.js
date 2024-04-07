@@ -24,7 +24,6 @@ document
   .addEventListener("click", () => createNewTask(""));
 
 const enterText = function (e) {
-  //console.log("here");
   if (e.key === "Enter") {
     e.preventDefault();
     const divName = document
@@ -79,7 +78,6 @@ function doMyTask() {
 }
 
 function getUserName(){
-  console.log("Hello")
   let userName = JSON.parse(localStorage.getItem('user')).name
   let div = document.querySelector('.hello').appendChild(document.createElement('h2'))
   div.innerHTML = `Hello, ${userName}`
