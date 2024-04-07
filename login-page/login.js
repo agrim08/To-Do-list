@@ -10,7 +10,6 @@ function onPasswordChange(e) {
   userObj["password"] = e;
 }
 const login = () => {
-  console.log("Hii");
   const obj = JSON.parse(localStorage.getItem("user"));
 
   if (!userObj.name && !userObj.email && !userObj.password) {
@@ -29,7 +28,6 @@ const login = () => {
           return;
         }
       } else {
-        console.log("Here");
         localStorage.setItem("user", JSON.stringify(userObj));
         //redirect
 

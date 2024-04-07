@@ -1,9 +1,10 @@
-document.querySelector(".submit").addEventListener("click", () => {
+function ClearFields() {
+  document.querySelector(".feedbacks").value = '';
   alert("Your feedback is recorded");
-});
-// function ClearFields() {
-//   document.getElementById("feedbackd").value = "";
-// }
+}
+
+document.querySelector(".submit").addEventListener("click", ClearFields);
+
 
 const todosArr = [];
 
