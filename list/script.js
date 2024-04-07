@@ -68,3 +68,14 @@ document.querySelector(".clear").addEventListener("click", () => {
     elem.parentNode.removeChild(elem);
   }
 });
+
+function func() {
+  window.location.href = "C:UsersagrimDocuments\to_dohome-pageindex.html";
+}
+
+document.querySelector(".logout").addEventListener("click", doMyTask);
+
+function doMyTask() {
+  localStorage.clear();
+  window.location.href = "../home-page/index.html";
+}

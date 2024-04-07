@@ -4,6 +4,22 @@
   box-sizing: border-box;
   font-family: "Elsie Swash Caps", serif;
 }
+.logout {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  justify-content: flex-start;
+  margin-top: 0px;
+  /* margin-left: 150px; */
+  width: 80px;
+  cursor: pointer;
+  border: none;
+  text-align: center;
+  background-color: transparent;
+  color: black;
+  font-weight: bolder;
+  font-size: larger;
+}
 body {
   display: flex;
   justify-content: center;
@@ -56,7 +72,7 @@ body {
   justify-content: space-between;
   width: 100%;
 }
-button {
+.clear {
   display: flex;
   border: none;
   outline: none;
@@ -111,4 +127,11 @@ button {
   border: 2px solid purple;
   border-radius: 30px;
   padding: 20px 45px 20px 20px;
+}
+.hello {
+  width: auto;
+}
+.hello h3 {
+  display: flex;
+  justify-content: center;
 }
