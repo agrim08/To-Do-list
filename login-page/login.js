@@ -10,7 +10,6 @@ function onPasswordChange(e) {
   userObj["password"] = e;
 }
 const login = () => {
-  console.log("Hii");
   const obj = JSON.parse(localStorage.getItem("user"));
 
   if (!userObj.name && !userObj.email && !userObj.password) {

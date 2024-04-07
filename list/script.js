@@ -40,7 +40,7 @@ const enterText = function (e) {
     const editButtons = divName.appendChild(document.createElement("img"));
     editButtons.className = "taskImg";
     editButtons.id = "editButton";
-    editButtons.src = "icons8-edit-50.png";
+    editButtons.src = "../resource/icons8-edit-50.png";
     editButtons.onclick = () => {
       createNewTask(storedText);
       divName.remove();
@@ -49,7 +49,7 @@ const enterText = function (e) {
     const deleteButtons = divName.appendChild(document.createElement("img"));
     deleteButtons.className = "taskImg";
     deleteButtons.id = "deleteButton";
-    deleteButtons.src = "icons8-delete-48.png";
+    deleteButtons.src = "../resource/icons8-delete-48.png";
     deleteButtons.onclick = function () {
       //remember this
       divName.remove();
@@ -69,13 +69,18 @@ document.querySelector(".clear").addEventListener("click", () => {
   }
 });
 
-function func() {
-  window.location.href = "C:UsersagrimDocuments\to_dohome-pageindex.html";
-}
+
 
 document.querySelector(".logout").addEventListener("click", doMyTask);
 
 function doMyTask() {
   localStorage.clear();
   window.location.href = "../home-page/index.html";
+}
+
+function getUserName(){
+  console.log("Hello")
+  let userName = JSON.parse(localStorage.getItem('user')).name
+  let div = document.querySelector('.hello').appendChild(document.createElement('h2'))
+  div.innerHTML = `Hello, ${userName}`
 }
