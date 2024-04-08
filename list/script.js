@@ -68,8 +68,6 @@ document.querySelector(".clear").addEventListener("click", () => {
   }
 });
 
-
-
 document.querySelector(".logout").addEventListener("click", doMyTask);
 
 function doMyTask() {
@@ -77,8 +75,11 @@ function doMyTask() {
   window.location.href = "../home-page/index.html";
 }
 
-function getUserName(){
-  let userName = JSON.parse(localStorage.getItem('user')).name
-  let div = document.querySelector('.hello').appendChild(document.createElement('h2'))
-  div.innerHTML = `Hello, ${userName}`
+function getUserName() {
+  let userName = JSON.parse(localStorage.getItem("user")).name;
+  let div = document
+    .querySelector(".hello")
+    .appendChild(document.createElement("h2"));
+  div.innerHTML = `Hello, ${userName}`;
+  div.className = "Hello-User";
 }

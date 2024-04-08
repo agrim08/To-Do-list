@@ -130,4 +130,7 @@ body {
   margin-bottom: 50px;
   align-self: center;
 }
-
+.Hello-User {
+  color: white;
+  text-decoration: double;
+}
